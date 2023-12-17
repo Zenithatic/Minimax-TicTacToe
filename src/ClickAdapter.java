@@ -23,7 +23,12 @@ public class ClickAdapter extends MouseAdapter{
 			
 			if (Main.evaluate()[0] == 1) {
 				Main.gameFinished = true;
-
+				if (Main.evaluate()[1] == 1) {
+					Main.game.setTitle("Player has won");
+				}
+				else {
+					Main.game.setTitle("AI has won");
+				}
 				return;
 			}
 			
@@ -32,6 +37,12 @@ public class ClickAdapter extends MouseAdapter{
 			
 			if (Main.evaluate()[0] == 1) {
 				Main.gameFinished = true;
+				if (Main.evaluate()[1] == 1) {
+					Main.game.setTitle("Player has won");
+				}
+				else {
+					Main.game.setTitle("AI has won");
+				}
 				return;
 			}	
 		}	

@@ -24,11 +24,12 @@ public class Main extends JFrame{
 	public static JPanel panel;
 	public static int curPlayer;
 	public static boolean gameFinished = false;
+	public static Main game;
 	
 	public static final int BSIZE = 3;
 	
 	public static void main(String[] args) {
-		Main game = new Main();
+		game = new Main();
 		game.setVisible(true);
 		
 		// determine who goes first (0 = AI, 1 = player)
